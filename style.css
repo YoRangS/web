@@ -1,0 +1,27 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#main {
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    margin: 5px;
+}
+header {
+    height: 100px;
+    border: 2px solid lightcoral;
+    background-color: bisque;
+    font-size: 30pt;   
+}
+nav, section {
+    float: left;
+    height: 200px;
+}
+nav {
+    background-color: darkgray;
+    font-size: 10pt;
+}
+section {
+    background-color: aliceblue;
+    font-size: 20pt;
+}
