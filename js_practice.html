@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>자바스크립트 적용해보장</title>
+        <style>
+            body {
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+            }
+            #main {
+                width: 100%;
+                text-align: center;
+            }
+            table {
+                border: 0;
+            }
+            td {
+                padding: 10px 10px;
+                vertical-align: middle;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <h1>뭔가가 잘못됐다 졸리니 내일 고쳐야징</h1>
+            <table>
+                <tr>
+                    <td><p>Choose A</p></td>
+                    <td>
+                        <form action="js.practice.js" method="get|post">
+                            <input type="radio" name="numberA" id="a" value="10" checked> 10 <br>
+                            <input type="radio" name="numberA" id="a" value="20"> 20 <br>
+                            <input type="radio" name="numberA" id="a" value="30"> 30 <br>
+                        </form>
+                    </td><td></td>
+                    
+                    <td><p>Choose B</p></td>
+                    <td>
+                        <form action="js.practice.js" method="get|post">
+                            <input type="radio" name="numberB" id="b" value="7" checked> 7 <br>
+                            <input type="radio" name="numberB" id="b" value="8"> 8 <br>
+                            <input type="radio" name="numberB" id="b" value="9"> 9 <br>
+                        </form>
+                    </td><td></td>
+                    <td><button onclick="add(a, b);">test_add</button></td>
+                    <td><button onclick="multiple(a, b);">test_multiple</button></td>
+                </tr>
+            </table>
+            <script src="js_practice.js"></script>
+        </div>
+    </body>
+</html>
