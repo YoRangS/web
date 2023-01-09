@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>주기 맞추는 공식은 나중에 맞춰야겠다;</title>
+        <style>
+            h1 {
+                margin-left: 10%;
+            }
+            #wrap {
+                display: block;
+                width: 70%;
+                height: 408px;
+                border: 10px;
+                border-color: black;
+                background-color:antiquewhite;
+                margin-left: 10%;
+            }
+            .block {
+                display: block;
+                margin-bottom: 1px;
+                width: 50px;
+                height: 50px;
+                position: relative;
+                animation-name: ani;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+            @keyframes ani {
+                0% {left: 0%;}
+                50% {left: 100%;}
+                100% {left: 0%;}
+            }
+            #red {
+                background-color: #ff0000;
+                animation-duration: 81s;
+            }
+            #orange {
+                background-color: #ff8c00;
+                animation-duration: 64s;
+            }
+            #yellow {
+                background-color: #ffff00;
+                animation-duration: 49s;
+            }
+            #green {
+                background-color: #008000;
+                animation-duration: 36s;
+            }
+            #blue {
+                background-color: #0000ff;
+                animation-duration: 25s;
+            }
+            #indigo {
+                background-color: #4b0082;
+                animation-duration: 16s;
+            }
+            #purple {
+                background-color: #800080;
+                animation-duration: 9s;
+            }
+            #black {
+                background-color: black;
+                animation-duration: 4s;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <h1>Pendulum</h1>
+            <br><br>
+            <div id="wrap">
+                <div class="block" id="red"></div>
+                <div class="block" id="orange"></div>
+                <div class="block" id="yellow"></div>
+                <div class="block" id="green"></div>
+                <div class="block" id="blue"></div>
+                <div class="block" id="indigo"></div>
+                <div class="block" id="purple"></div>
+                <div class="block" id="black"></div>
+            </div>
+        </div>
+    </body>
+</html>

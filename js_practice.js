@@ -1,37 +1,38 @@
 function getA() {
-    var numberA_length = document.getElementsByName("numberA").length;
-    var numberA;
+    var numberA = document.getElementsByName("numberA");
+    var numberA_checked;
 
-    for (var i=0; i<numberA_length; i++) {
-        if(document.getElementsByName("numberA")[i].checked == true) {
-            numberA = document.getElementsByName("numberA")[i].value;
+    for (var i=0; i<numberA.length; i++) {
+        if(numberA[i].checked) {
+            numberA_checked = numberA[i].value;
         }
     }
 
-    return numberA;
+    return numberA_checked;
 }
 
 function getB() {
-    var numberB_length = document.getElementsByName("numberB").length;
-    var numberB;
-    
-    for (var i=0; i<numberB_length; i++) {
-        if(document.getElementsByName("numberB")[i].checked == true) {
-            numberB = document.getElementsByName("numberB")[i].value;
+    var numberB = document.getElementsByName("numberB");
+    var numberB_checked;
+
+    for (var i=0; i<numberB.length; i++) {
+        if(numberB[i].checked) {
+            numberB_checked = numberB[i].value;
         }
     }
 
-    return numberB;
+    return numberB_checked;
 }
 
-var a = getA();
-var b = getB();
-
-function add(a, b) {
+function add() {
+    var a = getA();
+    var b = getB();
     var A = Number(a);
     var B = Number(b);
     window.alert(A+B)
 }
-function multiple(a, b) {
+function multiple() {
+    var a = getA();
+    var b = getB();
     window.alert(a*b)
 }
