@@ -2,9 +2,9 @@
 <html lang="ko">
     <head>
         <meta charset="UTF-8">
-        <title>주기 맞추는 공식은 나중에 맞춰야겠다;</title>
+        <title>내일의 나에게 맡길까나~</title>
         <style>
-            h1 {
+            #main {
                 margin-left: 10%;
             }
             #wrap {
@@ -14,7 +14,6 @@
                 border: 10px;
                 border-color: black;
                 background-color:antiquewhite;
-                margin-left: 10%;
             }
             .block {
                 display: block;
@@ -67,8 +66,14 @@
     </head>
     <body>
         <div id="main">
-            <h1>Pendulum</h1>
+            <h1>Pendulum</h1><hr>
             <br><br>
+            <p>How much?</p><br>
+            <form action="pendulum.js" method="get|post">
+                <input type="number" id="num" onchange="getNumber();" min="1" max="8">
+                <input type="button" name="submit" onclick="createDIV();" value="Submit"><br><br>
+            </form>
+            <script src="pendulum.js"></script>
             <div id="wrap">
                 <div class="block" id="red"></div>
                 <div class="block" id="orange"></div>
